@@ -8,7 +8,6 @@ fn main() {
         .with_title("Hello world");
     let cb = glium::glutin::ContextBuilder::new().with_vsync(true);
     let display = glium::Display::new(wb, cb, &events_loop).unwrap();
-    let mut frame = display.draw();
     WKey.bind(|| {
         println!("Forward Key has been pressed!");
     });
